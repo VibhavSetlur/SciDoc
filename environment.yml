@@ -1,0 +1,51 @@
+name: scidoc
+channels:
+  - conda-forge
+  - pytorch
+  - defaults
+dependencies:
+  - python=3.10
+  - pip
+  # Core scientific packages
+  - pytorch
+  - transformers
+  - pandas
+  - numpy
+  - matplotlib
+  - seaborn
+  - networkx
+  - pyyaml
+  - pillow
+  # Testing and development
+  - pytest
+  - pytest-cov
+  - gitpython
+  - requests
+  - python-dotenv
+  - aiofiles
+  - watchdog
+  - structlog
+  # Additional dependencies via pip
+  - pip:
+    - typer[all]
+    - rich
+    - pydantic
+    - PyPDF2
+    - chardet
+    - sentencepiece
+    - fastapi
+    - uvicorn
+    - jinja2
+    - sqlalchemy
+    - alembic
+    - redis
+    - celery
+    - prometheus-client
+    - plotly
+    - click
+    - black
+    - isort
+    - mypy
+    - scikit-learn>=1.3.0
+    - nltk>=3.8
+    - jieba>=0.42.1
